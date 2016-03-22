@@ -1,1 +1,1 @@
-worker: python linbot.py
+web: python linbot.py
