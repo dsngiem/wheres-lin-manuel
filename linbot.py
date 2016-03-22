@@ -35,11 +35,11 @@ def updateStatus():
 
 
     if linLocation != myLastLocation:
-        print "update my status. current location:", type(myLastLocation), type(linLocation)
+        return "update my status. current location:", linLocation
 
         api.update_status(linLocation)
     else:
-        print "location has not changed from:", myLastLocation
+        return "location has not changed from:", myLastLocation
 
 
 

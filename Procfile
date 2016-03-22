@@ -1,1 +1,1 @@
-web: python linbot.py
+web: python web.py
