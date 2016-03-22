@@ -6,7 +6,8 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
 	def get(self):
-		self.write(linbot.updateStatus())
+		status = linbot.updateStatus()		
+		self.write(status)
 
 def main():
 	application = tornado.web.Application([
