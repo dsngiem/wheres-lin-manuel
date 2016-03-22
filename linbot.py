@@ -5,6 +5,7 @@
 # if it changes, it posts to @linmanuelishere
 
 import tweepy
+import time
 
 consumerKey = "8yfryf5JvvjeBOG4mUs42fWWg"
 consumerSecret = "yHGOeK1iLgq8IpW0pz7SYXi2W2oXGHORrqEMkGgKtjfiHw1Klk"
@@ -40,5 +41,9 @@ def updateStatus():
     else:
         print "location has not changed from:", myLastLocation
 
-updateStatus()
 
+
+if __name__ == '__main__':
+    while True:
+		updateStatus()
+		time.sleep(60)
