@@ -18,7 +18,7 @@ auth.set_access_token(accessToken, accessTokenSecret)
 
 api = tweepy.API(auth)
 
-def updateStatus(api):
+def updateStatus():
 
     #get lin location
     linUser = api.get_user("lin_manuel")
@@ -40,5 +40,5 @@ def updateStatus(api):
     else:
         print "location has not changed from:", myLastLocation
 
-updateStatus(api)
+updateStatus()
 
